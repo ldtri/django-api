@@ -1,5 +1,9 @@
-FROM python:2-onbuild
+FROM python:3
 
 ADD docker/nginx/web /etc/nginx/sites-enabled/web
-
+ENV PYTHONUNBUFFERED 1
 ENV APP_ENV dev
+RUN mkdir /opt/wwww
+WORKDIR /opt/wwww
+COPY . /opt/www
+RUN pip install -r requirements.txt
