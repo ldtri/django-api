@@ -1,4 +1,0 @@
-Django==1.9.4
-gunicorn==19.6.0
-https://github.com/dockerfiles/django-uwsgi-nginx/blob/master/AUTHORS
-https://swapps.io/blog/dockerizing-django-apps/
